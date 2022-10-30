@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    box-sizing: border-box;
+    background: rgb(3, 4, 23);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        'a a a b b'
+        'a a a b b'
+        'c c d d d'
+        'c c e e e'
+    ;
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+    margin: 3rem auto;
+
+}
+
+main div {
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+
+.grid_1 {
+    background: orangered;
+    grid-area: a;
+}
+
+.grid_2 {
+    background: rgb(240, 171, 12);
+    grid-area: b;
+}
+
+.grid_3 {
+    background: rgb(71, 139, 32);
+    grid-area: c;
+}
+
+.grid_4 {
+    background: dodgerblue;
+    grid-area: d;
+}
+
+.grid_5 {
+    background: dodgerblue;
+    grid-area: e;
+}
